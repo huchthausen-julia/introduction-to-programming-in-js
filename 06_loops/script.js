@@ -13,15 +13,13 @@ function oddNumbers(num1, num2) {
         return "Only positive numbers are allowed";
     }
     
-    let result = "";
+    let result = [];
     for (let i = num1; i <= num2; i++) {
-        if (i % 2 !== 0) {
-            // if number is odd, add it to the result string
-            result += i + ","; // --> just like: result = result + i + ",";
+        if (i % 2 !== 0) { // check if i = odd number
+            result.push(i);
         }
     }
-    // Remove last comma from result string and return
-    return result.slice(0, -1);
+    return result.join(",");
 }
 
 console.log(oddNumbers(0, 4));
@@ -32,10 +30,9 @@ console.log(oddNumbers(10, 33));
 
 
 /* Wenn mindestens eine Zahl negativ ist, wird der Text "Only positive numbers are allowed" zurückgegeben.
-Wenn beide Zahlen positiv sind, wird eine leere Zeichenfolge "result" initialisiert, in der alle ungeraden Zahlen zwischen den beiden 
-eingegebenen Zahlen gespeichert werden.
-Dann wird eine for-Schleife verwendet, um über alle Zahlen zwischen der ersten und der zweiten Zahl zu iterieren. 
-Wenn eine Zahl ungerade ist (d.h. wenn der Rest bei der Division durch 2 ungleich 0 ist), wird sie der "result"-Zeichenfolge hinzugefügt, gefolgt von einem Komma.
+Wenn beide Zahlen positiv sind, wird ein leeres Array "result" initialisiert.
+Dann wird eine for-Schleife verwendet, um über alle Zahlen zwischen der ersten (num1) und der zweiten(num2) Zahl zu iterieren. 
+Wenn eine Zahl ungerade ist (d.h. wenn der Rest bei der Division durch 2 ungleich 0 ist), wird sie im "result" Array gespeichert.
 Am Ende wird das letzte Komma aus der "result"-Zeichenfolge entfernt und die vollständige Zeichenfolge wird zurückgegeben.*/
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*02) charCount function
