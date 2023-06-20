@@ -1,0 +1,28 @@
+.light-on {
+  background-color: snow;
+}
+
+.light-off {
+  background-color: black;
+  color: snow;
+}
+
+.light-off #toggle-button {
+  background-color: black;
+  color: snow;
+  box-shadow: 0 0 5px yellow, 0 0 10px yellow, 0 0 20px yellow;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  transition: background-color 0.5s;
+}
+.style-button {
+ font-size: 2rem;
+ cursor: pointer;
+ font-family: monospace;
+ background-color: snow;
+}
