@@ -1,0 +1,17 @@
+html {
+  box-sizing: border-box;
+  font-family: monospace;
+  font-size: 3rem;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+input[type="checkbox"] {
+  height: 0.5rem;
+  width: 0.5rem;
+}
